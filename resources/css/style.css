@@ -96,9 +96,7 @@ html {
     color: white;
     text-decoration: none;
   }
-  .navMobile {
-    display: none;
-  }
+  
   /* END: navigation */
   /* Main Container */
   main {
@@ -175,7 +173,9 @@ html {
 
 /* Tablet: */
 @media only screen and (max-width: 1024px) {
-  
+  .navMobile {
+    display: none;
+  }
 }
 /* Phone: */
 @media only screen and (max-width: 470px) {
