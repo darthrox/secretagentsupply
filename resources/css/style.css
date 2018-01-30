@@ -1,0 +1,188 @@
+/* Basic configuration */
+html {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+}
+.container {
+  width: 960px;
+}
+.debug {
+  border: 1px solid #F00;
+}
+
+/* Desktop: */
+
+  /* Header */
+    /* First Row: Black incl Logo */
+    .headerFirstRow {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: black;
+    }
+    .headerFirstRowContent {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 960px;
+      height: 4rem;
+    }
+    /* headLogo */
+    .headerFirstRowContent img {
+      display: flex;
+      height: 1.5rem;
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+    }
+    /* HeadLine */
+    .headerFirstRowContent span {
+      display: flex;
+      font-size: 1rem;
+      color: white;
+      margin-top: 0.66rem;
+      margin-bottom: 0.66rem;
+    }
+    /* Second Row: Motorcycle and Content */
+    .headerSecondRowBackground {
+      display: flex;
+      justify-content: center;
+      background-image: url(../images/moto.jpeg);
+      background-size: cover;
+      height: 25rem;
+      width: 100%;
+    }
+    .headerSecondRow {
+      display: flex;
+      align-items: center;
+      width: 960px;
+    }
+    .headerSecondRowContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: black;
+      color: white;
+      width: 20rem;
+      margin-top: 9rem;
+      padding: 2rem 3rem;
+    }
+    .headerSecondRowContent h4 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .headerSecondRowContent h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 0.25rem;
+    }
+  /* END: Header */
+  /* navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: firebrick;
+  }
+  .mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+  }
+  .mainNav span {
+    padding: 0.75rem;
+  }
+  .mainNav a {
+    color: white;
+    text-decoration: none;
+  }
+  .navMobile {
+    display: none;
+  }
+  /* END: navigation */
+  /* Main Container */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .mainFirstRow {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin-top: 3rem;
+  }
+  .mainFirstRowItem {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 4px solid black;
+  }  
+  .mainFirstRowItemImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    margin: 2rem;
+  }
+  .mainFirstRowItemImage img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .mainFirstRowItemText {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 0;
+  }
+  .mainSecondRow {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin-top: 3rem;
+  }
+  .mainSecondRowItem {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+  .headLine {
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+  }
+  /* END: main container */
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    margin-top: 4rem;
+    background-color: black;
+  }
+  footer span {
+    width: 960px;
+    color: white;
+    text-align: left;
+  }
+  
+
+
+/* Tablet: */
+@media only screen and (max-width: 1024px) {
+  
+}
+/* Phone: */
+@media only screen and (max-width: 470px) {
+  .mainNav {
+    display: none;
+  }
+  .navMobile {
+    display: flex;
+  }
+}
